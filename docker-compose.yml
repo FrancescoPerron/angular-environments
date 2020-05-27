@@ -1,0 +1,18 @@
+version: '3'
+services:
+  staging.web:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      args:
+        environment: staging
+    ports:
+        - "8080:80"
+  production.web:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      args:
+        environment: production
+    ports:
+        - "8081:80"
