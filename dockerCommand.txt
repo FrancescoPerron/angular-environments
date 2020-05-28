@@ -1,3 +1,5 @@
 docker build --build-arg environment=staging -t  angularenv .
 
-docker run --name pippocontainer  -p 4200:4200 apptest:latest
+docker run --name pippocontainer  -p 8080:80 apptest:latest
+
+docker-compose up --build
