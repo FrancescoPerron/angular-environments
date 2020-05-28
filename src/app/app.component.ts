@@ -8,5 +8,5 @@ import { from } from 'rxjs';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Hello angular' + environment.titleApp + ' environments';
+  title = 'Hello angular environments';
 }
